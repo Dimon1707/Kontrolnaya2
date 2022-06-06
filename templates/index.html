@@ -6,7 +6,7 @@
     <div class="clearfix"></div>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="/static/styleregister.css">
+    <link rel="stylesheet" href="/static/style.css">
 </header>
 <body>
 <form method="POST">
@@ -14,12 +14,12 @@
     <input name="username" placeholder="username">
     <input name="email" placeholder="email">
     <input name="phone" placeholder="phone">
-<form method="post">
-    {{ user_form.as_p }}
-    {% csrf_token %}
-    <button type="submit">
-        Register
-    </button>
-</form>
+    <form method="post">
+        {{ user_form.as_p }}
+        {% csrf_token %}
+        <button type="submit">
+            Register
+        </button>
+    </form>
 </body>
 </html>
